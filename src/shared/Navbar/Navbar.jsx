@@ -15,7 +15,7 @@ const Navbar = () => {
               <Link href="/">
                 <img
                   className="w-auto h-6 sm:h-7"
-                  src="https://merakiui.com/images/full-logo.svg"
+                  src="./assets/logo/logo.png"
                   alt=""
                 />
               </Link>
