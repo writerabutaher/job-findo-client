@@ -97,19 +97,7 @@ const Navbar = () => {
                         <ul className="grid w-[300px] gap-3 p-4 grid-cols-1 ">
                           <Link
                             href={"/"}
-                            className="block p-3 space-y-1 leading-none no-underline transition-colors rounded-md outline-none select-none hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                          >
-                            About
-                          </Link>
-                          <Link
-                            href={"/"}
-                            className="block p-3 space-y-1 leading-none no-underline transition-colors rounded-md outline-none select-none hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                          >
-                            About
-                          </Link>
-                          <Link
-                            href={"/"}
-                            className="block p-3 space-y-1 leading-none no-underline transition-colors rounded-md outline-none select-none hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                            className="block p-3 space-y-1 font-medium leading-none no-underline transition-colors rounded-md outline-none select-none hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           >
                             About
                           </Link>
@@ -147,14 +135,14 @@ const Navbar = () => {
               <div className="flex justify-center gap-4 mt-6 lg:flex lg:mt-0 lg:-mx-2">
                 <Link
                   href={"/"}
-                  className="flex items-center gap-2 px-6 py-4 font-semibold bg-yellow-400 rounded-xl hover:bg-yellow-500"
+                  className="flex items-center gap-2 px-6 py-4 font-semibold bg-yellow-300 rounded-xl hover:bg-yellow-400"
                 >
                   <BsFillFileEarmarkPostFill className="w-6 pr-2 border-r-2 border-r-black" />
                   Job Post
                 </Link>
                 <Link
                   href={"/"}
-                  className="flex items-center gap-2 px-6 py-4 font-semibold text-white bg-blue-600 rounded-xl hover:bg-blue-700"
+                  className="flex items-center gap-2 px-6 py-4 font-semibold text-white bg-blue-500 rounded-xl hover:bg-blue-600"
                 >
                   <AiOutlineCloudDownload className="w-8 pr-2 border-r-2 border-r-white" />
                   CV Post
