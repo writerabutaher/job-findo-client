@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="bg-white shadow dark:bg-gray-800">
+      <nav className="fixed top-0 left-0 right-0 z-20 bg-white shadow md:bg-transparent md:bg-opacity-50 dark:bg-gray-800 md:backdrop-blur-md">
         <div className="container px-6 py-4 mx-auto">
           <div className="lg:flex lg:items-center">
             <div className="flex items-center justify-between">

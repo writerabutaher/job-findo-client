@@ -53,10 +53,12 @@ const Category = () => {
           aria-expanded={open}
           className="md:w-[350px] w-full justify-between bg-background text-xl px-4 py-8 text-gray-500"
         >
-          <LocateFixed className="w-8 h-6 mr-2 text-gray-500" />
-          {value
-            ? frameworks.find((framework) => framework.value === value)?.label
-            : "Category"}
+          <div className="flex items-center">
+            <LocateFixed className="w-8 h-6 mr-2 text-gray-500" />
+            {value
+              ? frameworks.find((framework) => framework.value === value)?.label
+              : "Category"}
+          </div>
           <ChevronsUpDown className="w-4 h-4 ml-2 opacity-50 shrink-0" />
         </Button>
       </PopoverTrigger>
