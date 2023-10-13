@@ -41,7 +41,7 @@ const frameworks = [
   },
 ];
 
-const Combobox = () => {
+const Location = () => {
   const [open, setOpen] = React.useState(false);
   const [value, setValue] = React.useState("");
 
@@ -51,22 +51,23 @@ const Combobox = () => {
         <Button
           role="combobox"
           aria-expanded={open}
-          className="w-[200px] justify-between bg-background"
+          className="md:w-[350px] w-full justify-between bg-background text-xl px-4 py-8 text-gray-500"
         >
-          <LocateFixed className="w-4 h-4 mr-2" />
+          <LocateFixed className="w-8 h-6 mr-2 text-gray-500" />
           {value
             ? frameworks.find((framework) => framework.value === value)?.label
-            : "Select framework..."}
+            : "Location"}
           <ChevronsUpDown className="w-4 h-4 ml-2 opacity-50 shrink-0" />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-[200px] p-0">
+      <PopoverContent className="md:w-[350px] w-full p-0 text-xl">
         <Command>
-          <CommandInput placeholder="Search framework..." />
+          <CommandInput placeholder="Search Location..." />
           <CommandEmpty>No results found.</CommandEmpty>
           <CommandGroup>
             {frameworks.map((framework) => (
               <CommandItem
+                className="text-xl"
                 key={framework.value}
                 onSelect={(currentValue) => {
                   setValue(currentValue === value ? "" : currentValue);
@@ -89,4 +90,4 @@ const Combobox = () => {
   );
 };
 
-export default Combobox;
+export default Location;
