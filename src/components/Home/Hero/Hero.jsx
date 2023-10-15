@@ -11,7 +11,19 @@ const Hero = () => {
   return (
     <section className="bg-[url('/assets/images/section-bg.png')] md:py-20">
       <div className="max-w-screen-xl gap-12 px-4 py-40 mx-auto text-gray-600 md:px-8">
-        <div className="max-w-4xl mx-auto space-y-10 text-center md:space-y-16">
+        <div className="mx-auto space-y-10 text-center md:space-y-16">
+          <div className="flex justify-between">
+            <img
+              className="w-10 h-10"
+              src="/public/assets/logo/01.png"
+              alt=""
+            />
+            <img
+              className="w-10 h-10"
+              src="/public/assets/logo/02.png"
+              alt=""
+            />
+          </div>
           <div className="inline-block px-4 py-2 text-sm font-medium bg-white border border-gray-300 rounded-full md:px-6 md:text-lg">
             <h1>
               <span className="pr-4 text-gray-500">The Best Job Seekers</span>
@@ -21,9 +33,21 @@ const Hero = () => {
               </span>
             </h1>
           </div>
-          <h1 className="mx-auto text-4xl text-gray-800 sm:text-6xl lg:text-8xl">
-            Find The Right Job & Build Your Career
-          </h1>
+          <div className="flex items-center justify-between">
+            <img
+              className="w-10 h-10"
+              src="/public/assets/logo/03.png"
+              alt=""
+            />
+            <h1 className="mx-auto text-4xl text-gray-800 sm:text-6xl lg:text-8xl">
+              Find The Right Job & Build Your Career
+            </h1>
+            <img
+              className="w-10 h-10"
+              src="/public/assets/logo/04.png"
+              alt=""
+            />
+          </div>
           <div className="items-center justify-center space-y-3 gap-x-3 sm:flex sm:space-y-0 text-start">
             <div className="flex flex-col">
               <Label className="pb-2 text-xl" htmlFor="combobox1">
@@ -59,6 +83,23 @@ const Hero = () => {
                 </button>
               </div>
             </div>
+          </div>
+          <div className="flex justify-between">
+            <img
+              className="w-10 h-10"
+              src="/public/assets/logo/05.png"
+              alt=""
+            />
+            <img
+              className="w-10 h-10"
+              src="/public/assets/logo/06.png"
+              alt=""
+            />
+            <img
+              className="w-10 h-10"
+              src="/public/assets/logo/07.png"
+              alt=""
+            />
           </div>
         </div>
       </div>
