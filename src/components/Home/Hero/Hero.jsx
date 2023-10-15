@@ -14,13 +14,13 @@ const Hero = () => {
         <div className="mx-auto space-y-10 text-center md:space-y-16">
           <div className="flex justify-between">
             <img
-              className="w-10 h-10"
-              src="/public/assets/logo/01.png"
+              className="hidden w-20 p-3 bg-white border rounded-md md:block"
+              src="/assets/logo/01.png"
               alt=""
             />
             <img
-              className="w-10 h-10"
-              src="/public/assets/logo/02.png"
+              className="hidden w-20 p-3 bg-white border rounded-md md:block"
+              src="/assets/logo/02.png"
               alt=""
             />
           </div>
@@ -35,16 +35,16 @@ const Hero = () => {
           </div>
           <div className="flex items-center justify-between">
             <img
-              className="w-10 h-10"
-              src="/public/assets/logo/03.png"
+              className="hidden w-20 p-3 bg-white border rounded-md md:block"
+              src="/assets/logo/03.png"
               alt=""
             />
             <h1 className="mx-auto text-4xl text-gray-800 sm:text-6xl lg:text-8xl">
               Find The Right Job & Build Your Career
             </h1>
             <img
-              className="w-10 h-10"
-              src="/public/assets/logo/04.png"
+              className="hidden w-20 p-3 bg-white border rounded-md md:block"
+              src="/assets/logo/04.png"
               alt=""
             />
           </div>
@@ -86,18 +86,18 @@ const Hero = () => {
           </div>
           <div className="flex justify-between">
             <img
-              className="w-10 h-10"
-              src="/public/assets/logo/05.png"
+              className="hidden w-20 p-3 bg-white border rounded-md md:block"
+              src="/assets/logo/05.png"
               alt=""
             />
             <img
-              className="w-10 h-10"
-              src="/public/assets/logo/06.png"
+              className="hidden w-20 p-3 bg-white border rounded-md md:block"
+              src="/assets/logo/06.png"
               alt=""
             />
             <img
-              className="w-10 h-10"
-              src="/public/assets/logo/07.png"
+              className="hidden w-20 p-3 bg-white border rounded-md md:block"
+              src="/assets/logo/07.png"
               alt=""
             />
           </div>
