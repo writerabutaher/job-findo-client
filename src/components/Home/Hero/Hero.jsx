@@ -61,7 +61,7 @@ const Hero = () => {
               </Label>
               <Category />
             </div>
-            <div class="flex flex-col">
+            <div className="flex flex-col">
               <div className="flex items-center md:w-[400px] relative">
                 <div className="flex flex-col">
                   <Label className="pb-2 text-xl text" htmlFor="find-job">
