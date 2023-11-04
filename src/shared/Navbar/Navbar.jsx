@@ -1,35 +1,34 @@
 "use client";
 
-import Link from "next/link";
 import React, { useState } from "react";
+import Link from "next/link";
 
 // icons
-import { BsFillFileEarmarkPostFill } from "react-icons/bs";
-import { AiOutlineCloudDownload } from "react-icons/ai";
+import {
+  BsFillFileEarmarkPostFill,
+  BsFillCloudDownloadFill,
+} from "react-icons/bs";
 
 // navigation menu
 import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div>
       <nav className="fixed top-0 left-0 right-0 z-20 bg-white shadow md:bg-transparent md:bg-opacity-50 dark:bg-gray-800 md:backdrop-blur-md">
         <div className="container px-6 py-4 mx-auto">
           <div className="lg:flex lg:items-center">
             <div className="flex items-center justify-between">
               <Link href="/">
                 <img
-                  className="w-auto h-6 sm:h-7"
+                  className="min-w-40 h-6 sm:h-7"
                   src="./assets/logo/logo.png"
                   alt=""
                 />
@@ -118,18 +117,6 @@ const Navbar = () => {
                 >
                   docs
                 </Link>
-                <Link
-                  href="/"
-                  className="mt-2 text-xl font-semibold transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200"
-                >
-                  support
-                </Link>
-                <Link
-                  href="/"
-                  className="mt-2 text-xl font-semibold transition-colors duration-300 transform lg:mt-0 lg:mx-4 hover:text-gray-900 dark:hover:text-gray-200"
-                >
-                  blog
-                </Link>
               </div>
 
               <div className="flex justify-center gap-4 mt-6 lg:flex lg:mt-0 lg:-mx-2">
@@ -144,7 +131,7 @@ const Navbar = () => {
                   href={"/"}
                   className="flex items-center gap-2 px-6 py-4 font-semibold text-white bg-blue-500 rounded-xl hover:bg-blue-600"
                 >
-                  <AiOutlineCloudDownload className="w-8 pr-2 border-r-2 border-r-white" />
+                  <BsFillCloudDownloadFill className="w-8 pr-2 border-r-2 border-r-white" />
                   CV Post
                 </Link>
               </div>
@@ -152,7 +139,6 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    </div>
   );
 };
 

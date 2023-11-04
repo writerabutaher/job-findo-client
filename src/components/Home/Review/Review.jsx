@@ -9,15 +9,15 @@ import SwiperButton from "./SwiperButton";
 
 const Review = () => {
   return (
-    <section className="dark:bg-gray-900">
-      <div className="max-w-6xl px-6 py-10 mx-auto">
+    <>
+      <section className="max-w-6xl px-6 pb-20 mx-auto">
         <div className="flex flex-col items-center gap-4">
           <p className="text-xl font-medium rounded-full bg-white px-6 py-2 shadow text-blue-600 ">
             Testimonials
           </p>
 
-          <h1 className="mt-2 text-3xl font-semibold text-gray-800 capitalize lg:text-5xl dark:text-white">
-            See What Our <span className="text-yellow-400">Clients</span> Say
+          <h1 className="mt-2 text-3xl font-semibold text-gray-800 capitalize lg:text-5xl dark:text-white text-center">
+            See What Our <span className="text-yellow-500">Clients</span> Say
             About Us
           </h1>
         </div>
@@ -57,8 +57,8 @@ const Review = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

@@ -4,11 +4,11 @@ import JobCard from "./JobCard";
 
 const Job = () => {
   return (
-    <div className="container flex justify-center gap-8 pb-20 mx-auto">
-      <div className="w-1/4 px-4 py-8 shadow-2xl bg-slate-100 rounded-2xl">
+    <div className="container flex flex-col md:flex-row gap-8 pb-20 mx-auto">
+      <div className="md:w-[400px] px-4 py-8 shadow-2xl bg-slate-100 rounded-2xl">
         <JobList />
       </div>
-      <div className="w-3/4">
+      <div className="w-full">
         <JobCard />
       </div>
     </div>

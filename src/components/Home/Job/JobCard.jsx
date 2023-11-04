@@ -3,10 +3,9 @@ import { Banknote } from "lucide-react";
 
 const JobCard = () => {
   return (
-    <div>
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {[1, 2, 3, 4, 5, 6].map((e) => (
-          <div className="space-y-4 bg-white shadow-xl rounded-xl h-[300px] p-8 hover:outline hover:outline-1 hover:outline-blue-600">
+          <div className="space-y-4 bg-white shadow-xl rounded-xl min-h-[300px] p-8 hover:outline hover:outline-1 hover:outline-blue-600">
             <div className="space-y-2">
               <h1 className="text-2xl font-semibold">
                 Digital Marketing Manager
@@ -34,7 +33,6 @@ const JobCard = () => {
           </div>
         ))}
       </div>
-    </div>
   );
 };
 

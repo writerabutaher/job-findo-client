@@ -1,15 +1,16 @@
-import { BsArrowRight } from "react-icons/bs";
 import Category from "./Category";
 import Location from "./Location";
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+
+// icons
 import { LocateFixed } from "lucide-react";
-import { AiOutlineCloudDownload } from "react-icons/ai";
+import { BsArrowRight } from "react-icons/bs";
+import { AiOutlineCloudDownload, AiOutlineRight } from "react-icons/ai";
 
 const Hero = () => {
   return (
-    <section className="bg-[url('/assets/images/section-bg.png')] md:py-20">
+    <section className="bg-[url('/assets/images/section-bg.png')]">
       <div className="max-w-screen-xl gap-12 px-4 py-40 mx-auto text-gray-600 md:px-8">
         <div className="mx-auto space-y-10 text-center md:space-y-16">
           <div className="flex justify-between">
@@ -39,7 +40,7 @@ const Hero = () => {
               src="/assets/logo/03.png"
               alt=""
             />
-            <h1 className="mx-auto text-4xl text-gray-800 sm:text-6xl lg:text-8xl">
+            <h1 className="mx-auto text-4xl text-gray-800 sm:text-6xl lg:text-8xl font-semibold">
               Find The Right Job & Build Your Career
             </h1>
             <img
@@ -48,7 +49,7 @@ const Hero = () => {
               alt=""
             />
           </div>
-          <div className="items-center justify-center space-y-3 gap-x-3 sm:flex sm:space-y-0 text-start">
+          <div className="items-center justify-center space-y-6 gap-x-3 md:flex flex-wrap sm:space-y-0 text-start">
             <div className="flex flex-col">
               <Label className="pb-2 text-xl" htmlFor="combobox1">
                 Location
@@ -62,7 +63,7 @@ const Hero = () => {
               <Category />
             </div>
             <div className="flex flex-col">
-              <div className="flex items-center md:w-[400px] relative">
+              <div className="flex items-center justify-center md:w-[400px] relative">
                 <div className="flex flex-col">
                   <Label className="pb-2 text-xl text" htmlFor="find-job">
                     Job looking for
@@ -77,9 +78,9 @@ const Hero = () => {
                     />
                   </div>
                 </div>
-                <button className="flex items-center self-end gap-2 px-2 py-5 text-white bg-blue-500 rounded-md rounded-l-none hover:bg-blue-600">
+                <button className="flex items-center self-end gap-2 px-2 py-5 text-white bg-blue-500 rounded-md rounded-l-none hover:bg-blue-600 font-semibold">
                   Search
-                  <AiOutlineCloudDownload className="w-8 pl-1 border-l border-white" />
+                  <AiOutlineRight className="w-8 border-l border-white" />
                 </button>
               </div>
             </div>
